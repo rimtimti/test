@@ -193,17 +193,7 @@ print(snail([[1]]))
 #     int i = 0;
 #     int j = 0;
 #     while (count <= number * number)
-#     {
-#         result [i, j] = count;
-#         count++;
-#         if (i <= j + 1 && i + j < number - 1)
-#             j++;
-#         else if (i < j && i + j >= number - 1)
-#             i++;
-#         else if (i >= j && i + j > number - 1)
-#             j--;
-#         else
-#             i--;
+
 #     }
 #     return result;
 # }
