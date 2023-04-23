@@ -1,11 +1,10 @@
 # def duplicate_count(data):
 #     return ["Senior" if i >= 55 and j > 7 else "Open" for (i, j) in data]
-    
+
 # input =  [[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]
 # output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 
 # print(duplicate_count(input)) 
-
 
 
 # import re
@@ -122,7 +121,6 @@
 #     return "\n".join(a)
 
 
-
 # print(strip_comments('apples, pears # and bananas\ngrapes\nbananas !apples', ['#', '!']))   # 'apples, pears\ngrapes\nbananas'
 # print(strip_comments('a #b\nc\nd $e f g', ['#', '$']))                                      # 'a\nc\nd'
 # print(strip_comments(' a #b\nc\nd $e f g', ['#', '$']))                                     # ' a\nc\nd'
@@ -141,50 +139,47 @@
 #     return ''.join(str(c[i-1])[-number:] if len(str(c[i])) <= number else str(c[i-1]+1)[-number:] for i in range(1,len(c)))
 
 
-
 # print(sum_strings("1", "1"))
 # print(sum_strings("123", "456"))
 # print(sum_strings("1", ""))
 # print(sum_strings("45678910111236567891011", "1234512345678910111236567891011"))
 
-array1 = [[1,2,3],
-          [4,5,6],
-          [7,8,9]]
+array1 = [[1, 2, 3],
+          [4, 5, 6],
+          [7, 8, 9]]
 # print(len(array1))
 # print(array1[i][j])
 
-array2 = [[1,2,3],
-          [8,9,4],
-          [7,6,5]]
-
+array2 = [[1, 2, 3],
+          [8, 9, 4],
+          [7, 6, 5]]
 
 
 def snail(snail_map):
     # if len(snail_map) ** 2 == 1:
     #     return [[]]
     result = []
-    i,j = 0,0
-    if len(snail_map [i]) == 0:
+    i, j = 0, 0
+    if len(snail_map[i]) == 0:
         return []
     while len(result) != len(snail_map) ** 2:
-        result.append(snail_map [i][j])
+        result.append(snail_map[i][j])
         if i <= j + 1 and i + j < len(snail_map) - 1:
-            j+=1
+            j += 1
         elif i < j and i + j >= len(snail_map) - 1:
-            i+=1
+            i += 1
         elif i >= j and i + j > len(snail_map) - 1:
-            j-=1
+            j -= 1
         else:
-            i-=1
+            i -= 1
     return result
     pass
 
 
-print(snail(array1)) # [1,2,3,6,9,8,7,4,5]
-print(snail(array2)) # [1,2,3,4,5,6,7,8,9]
+print(snail(array1))  # [1,2,3,6,9,8,7,4,5]
+print(snail(array2))  # [1,2,3,4,5,6,7,8,9]
 print(snail([[]]))
 print(snail([[1]]))
-
 
 # int[,] GetArraySpiral(int number)
 # {
@@ -199,9 +194,11 @@ print(snail([[1]]))
 # }
 
 
-
 # Это тестовое задание, изменение
 
 # еще что-то написал, правки )))
 
 # А это вообще эксперимент
+
+# Код задачи посмотрел
+# Все ок
